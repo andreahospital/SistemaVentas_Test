@@ -27,7 +27,7 @@ namespace SistemaFacturacion.Controllers
             return View();
 
         }
-
+        //prueba
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Contacto([Bind(Include = "id_consulta,nombre,email,comentario")] Consulta consulta)
