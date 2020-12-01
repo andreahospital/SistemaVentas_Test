@@ -1,7 +1,75 @@
-﻿
-@{
+﻿@*@{
     ViewBag.Title = "Nosotros";
-}
+}*@
 
-<h2>Nosotros</h2>
+@*<div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @Html.ActionLink("Sistema de Ventas", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
 
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
+                        <li>@Html.ActionLink("Nosotros", "Nosotros", "Home")</li>
+                        <li>@Html.ActionLink("Contacto", "Contacto", "Home")</li>
+                        <li>@Html.ActionLink("Proveedor", "Index", "Proveedores")</li>
+                        <li>@Html.ActionLink("Articulo", "Index", "Articulos")</li>
+
+                    </ul>
+                    @Html.Partial("_LoginPartial")
+                </div>
+        </div>
+    </div>
+<h2>Nosotros</h2>*@
+
+
+
+<div class="jumbotron">
+    <h1>Quienes somos?</h1>
+    <p class="lead">Un grupo de estudiantes enfocados y decididos en pasar la materia.</p>
+
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <img src="">
+        <h3>
+            Vilma Colman
+        </h3>
+        <p><a class="btn btn-default" href="https://github.com/vilmacol">Para mas info &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <img src="">
+        <h3>
+            Sasha Flores
+        </h3>
+        <p><a class="btn btn-default" href="https://github.com/liflonyan">Para mas info &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <img src="">
+        <h3>
+            Andrea Hospital
+        </h3>
+        <p><a class="btn btn-default" href="https://github.com/andreahospital">Para mas info &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <img src="">
+        <h3>
+            Adrian Soa
+        </h3>
+        <p><a class="btn btn-default" href="https://github.com/adriansoa">Para mas info &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <img src="">
+        <h3>
+            Matias Valdez
+        </h3>
+        <p><a class="btn btn-default" href="https://github.com/iLaGMatiVR">Para mas info &raquo;</a></p>
+    </div>
+</div>
